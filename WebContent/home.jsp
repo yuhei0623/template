@@ -49,12 +49,12 @@
 		   text-align: center;
 		}
 
-		#footer {
+		/*#footer {
 			width: 100%;
 			height: 80px;
 			background-color: black;
 			clear:both;
-		}
+		}*/
 
 		#text-center {
 			display: inline-block;
@@ -81,9 +81,10 @@
 			</s:if>
 		</div>
 	</div>
-	<div id="footer">
+	  <!--<div id="footer">
 	 	<div id="pr">
 		</div>
-	</div>
+	</div>-->
+	<s:include value="footer.jsp" />
 </body>
 </html>
