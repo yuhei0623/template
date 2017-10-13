@@ -40,11 +40,11 @@
 		   border:1px solid #333;
 		}
 
-		#header {
+		/*#header {
 		   width: 100%;
 		   height: 80px;
 		   background-color: black;
-		}
+		}*/
 
 		#main {
 		   width: 100%;
@@ -52,12 +52,12 @@
 		   text-align: center;
 		}
 
-		#footer {
+		/*#footer {
 			width: 100%;
 			height: 80px;
 			background-color: black;
 			clear:both;
-		}
+		}*/
 
 		#text-link {
 			display: inline-block;
@@ -66,6 +66,7 @@
 	</style>
 </head>
 <body>
+<s:include value="header.jsp" />
 	<div id="header">
 	 	<div id="pr">
 		</div>
@@ -88,9 +89,10 @@
 			</div>
 		</div>
 	</div>
-	<div id="footer">
+	<!--<div id="footer">
 	 	<div id="pr">
 		</div>
-	</div>
+	</div>-->
+<s:include value="footer.jsp" />
 </body>
 </html>

@@ -37,11 +37,11 @@
 		   border:1px solid #333;
 		}
 
-		#header {
+		/*#header {
 		   width: 100%;
 		   height: 80px;
 		   background-color: black;
-		}
+		}*/
 
 		#main {
 		   width: 100%;
@@ -63,6 +63,7 @@
 	</style>
 </head>
 <body>
+<s:include value="header.jsp" />
 	<div id="header">
 	 	<div id="pr">
 		</div>
