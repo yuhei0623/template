@@ -8,6 +8,7 @@
 <title>Header</title>
 <!-- Bootstrap読み込み -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
 <!-- Jquery読み込み -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <!-- Bootstrapjs読み込み -->
@@ -39,8 +40,8 @@
     </div>
     <ul class="nav navbar-nav">
       <li class="active"><a href="<s:url action="GoHomeAction" />">Home</a></li>
-	  <li><a href="#">Page 1</a></li>
-      <li><a href="#">Page 2</a></li>
+	  <li><a href="#">商品</a></li>
+      <li><a href="#">問い合わせ</a></li>
     </ul>
     <ul class="nav navbar-nav navbar-right">
       <li><a href="<s:url action="UserCreateAction" />"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
