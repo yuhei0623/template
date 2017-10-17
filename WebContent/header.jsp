@@ -24,7 +24,8 @@
     </div>
     <ul class="nav navbar-nav">
       <li class="active"><a href="<s:url action="GoHomeAction" />">Home</a></li>
-	  <li><a href="#">商品</a></li>
+	  <li><a href="<s:url action=HomeAction" />">Item</a></li>
+	  <li><a href="<s:url action="MyPageAction" />">MyPage</a></li>
       <!-- <li><a href="#">問い合わせ</a></li> -->
     </ul>
     <ul class="nav navbar-nav navbar-right">

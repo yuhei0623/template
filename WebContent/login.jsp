@@ -69,10 +69,7 @@
 <!-- header -->
 <s:include value="header.jsp" />
 <!-- header End -->
-	<div id="header">
-	 	<div id="pr">
-		</div>
-	</div>
+
 	<div id="main">
 		<div id="top">
 			<p>Login</p>

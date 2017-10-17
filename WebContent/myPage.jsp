@@ -111,8 +111,6 @@
 			</div>
 		</div>
 	</div>
-<!-- footer -->
-<s:include value="footer.jsp" />
-<!-- footer End -->
+
 </body>
 </html>
