@@ -15,24 +15,8 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
-<!-- ログイン時ヘッダ
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">WebSiteName</a>
-    </div>
-    <ul class="nav navbar-nav">
-      <li class="active"><a href="<s:url action="GoHomeAction" />">Home</a></li>
-	  <li><a href="#">Page 1</a></li>
-      <li><a href="#">Page 2</a></li>
-    </ul>
-    <ul class="nav navbar-nav navbar-right">
-      <li><a href="<s:url action ="LogoutAction" />"><span class="glyphicon glyphicon-log-in"></span>Logout </a></li>
-    </ul>
-  </div>
-</nav>
- -->
-<!-- 未ログイン時ヘッダ -->
+<!-- ログイン時ヘッダ -->
+<s:if test="#session.loginFlg != null">
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -41,7 +25,27 @@
     <ul class="nav navbar-nav">
       <li class="active"><a href="<s:url action="GoHomeAction" />">Home</a></li>
 	  <li><a href="#">商品</a></li>
-      <li><a href="#">問い合わせ</a></li>
+      <!-- <li><a href="#">問い合わせ</a></li> -->
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="<s:url action ="LogoutAction" />"><span class="glyphicon glyphicon-log-in"></span>Logout </a></li>
+    </ul>
+  </div>
+</nav>
+</s:if>
+<!-- ログイン時ヘッダ End -->
+
+<!-- 未ログイン時ヘッダ -->
+<s:else>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">WebSiteName</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="<s:url action="GoHomeAction" />">Home</a></li>
+	  <li><a href="<s:url action="HomeAction" />">商品</a></li>
+      <!-- <li><a href="#">問い合わせ</a></li> -->
     </ul>
     <ul class="nav navbar-nav navbar-right">
       <li><a href="<s:url action="UserCreateAction" />"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
@@ -49,6 +53,7 @@
     </ul>
   </div>
 </nav>
+</s:else>
 <!-- 未ログイン時ヘッダ End -->
 
 </body>
