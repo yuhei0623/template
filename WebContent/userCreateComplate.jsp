@@ -60,10 +60,10 @@
 	</style>
 </head>
 <body>
-	<div id="header">
-	 	<div id="pr">
-		</div>
-	</div>
+<!-- header -->
+<s:include value="header.jsp" />
+<!-- header End -->
+
 	<div id="main">
 		<div id="top">
 			<p>UserCreateConfirm</p>
@@ -76,10 +76,10 @@
 			</div>
 		</div>
 	</div>
-	<div id="footer">
-	 	<div id="pr">
-		</div>
-	</div>
+
+<!-- footer -->
+<s:include value="footer.jsp" />
+<!-- footer End -->
 </body>
 </html>
 

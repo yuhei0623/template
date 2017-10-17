@@ -65,11 +65,10 @@
 	</style>
 </head>
 <body>
+<!-- header -->
 <s:include value="header.jsp" />
-	<!--<div id="header">
-	 	<div id="pr">
-		</div>
-	</div>-->
+<!-- header End -->
+
 	<div id="main">
 		<div id="top">
 			<p>MyPage</p>
@@ -112,10 +111,8 @@
 			</div>
 		</div>
 	</div>
-	<!--<div id="footer">
-		<div id="pr">
-		</div>
-	</div>-->
+<!-- footer -->
 <s:include value="footer.jsp" />
+<!-- footer End -->
 </body>
 </html>
