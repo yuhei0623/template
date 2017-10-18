@@ -16,7 +16,7 @@
 </head>
 <body>
 <!-- ログイン時ヘッダ -->
-<s:if test="#session.loginFlg != null">
+<s:if test="#session.loginFlg !=null">
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -24,12 +24,11 @@
     </div>
     <ul class="nav navbar-nav">
       <li class="active"><a href="<s:url action="GoHomeAction" />">Home</a></li>
-	  <li><a href="<s:url action=HomeAction" />">Item</a></li>
+	  <li><a href="<s:url action="HomeAction" />">Item</a></li>
 	  <li><a href="<s:url action="MyPageAction" />">MyPage</a></li>
-      <!-- <li><a href="#">問い合わせ</a></li> -->
     </ul>
     <ul class="nav navbar-nav navbar-right">
-      <li><a href="<s:url action ="LogoutAction" />"><span class="glyphicon glyphicon-log-in"></span>Logout </a></li>
+      <li><a href="<s:url action ="LoginAction" />"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
     </ul>
   </div>
 </nav>
