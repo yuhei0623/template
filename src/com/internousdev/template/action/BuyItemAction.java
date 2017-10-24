@@ -27,6 +27,11 @@ public class BuyItemAction extends ActionSupport implements SessionAware {
 	public String pay;
 
 	/**
+	 * 画像
+	 */
+	public String img_path1;
+
+	/**
 	 * アイテム情報を格納
 	 */
 	public Map<String, Object>  buyItemInfoMap = new HashMap<>();
@@ -46,6 +51,7 @@ public class BuyItemAction extends ActionSupport implements SessionAware {
 		buyItemInfoMap.put("count", count);
 		int intCount = Integer.parseInt(buyItemInfoMap.get("count").toString());
 		int intPrice = Integer.parseInt(buyItemInfoMap.get("buyItem_price").toString());
+
 
 		buyItemInfoMap.put("total_price", intCount * intPrice);
 		String payment;
@@ -78,7 +84,15 @@ public class BuyItemAction extends ActionSupport implements SessionAware {
 		this.pay = pay;
 	}
 
-	@Override
+    public String getImg_path1() {
+        return img_path1;
+    }
+
+    public void setImg_path1(String img_path1) {
+        this.img_path1 = img_path1;
+    }
+
+    @Override
 	public void setSession(Map<String, Object> buyItemInfoMap) {
 		this.buyItemInfoMap = buyItemInfoMap;
 	}

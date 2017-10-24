@@ -8,7 +8,25 @@ public class BuyItemDTO {
 
 	public String itemPrice;
 
-	public String getItemName() {
+	public String img_path1;
+
+	/**
+     * 画像を取得するメソッド。
+     * @return img_path1
+     */
+    public String getImg_path1() {
+        return img_path1;
+    }
+
+    /**
+     * 画像を格納するメソッド。
+     * @param img_path1
+     */
+    public void setImg_path1(String img_path1) {
+        this.img_path1 = img_path1;
+    }
+
+    public String getItemName() {
 		return itemName;
 	}
 

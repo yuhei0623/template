@@ -73,6 +73,7 @@
 		<s:form action="BuyItemAction">
 			<table>
 				<tr>
+				<img src="./img/iphone1.jpg">
 					<td>
 						<span>商品名</span>
 					</td>

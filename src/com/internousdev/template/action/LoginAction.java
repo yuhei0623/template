@@ -34,10 +34,12 @@ public class LoginAction extends ActionSupport implements SessionAware{
 	 */
 	public String loginPassword;
 
+
 	/**
 	 * 処理結果を格納
 	 */
 	public String result;
+
 
 	/**
 	 * ログイン情報を格納
@@ -82,6 +84,7 @@ public class LoginAction extends ActionSupport implements SessionAware{
 			loginUserInfoMap.put("id", buyItemDTO.getId());
 			loginUserInfoMap.put("buyItem_name", buyItemDTO.getItemName());
 			loginUserInfoMap.put("buyItem_price", buyItemDTO.getItemPrice());
+			loginUserInfoMap.put("buyItem_img", buyItemDTO.getImg_path1());
 
 			return result;
 		}
