@@ -40,6 +40,6 @@ delete_date datetime
 );
 
 
-INSERT INTO item_info_transaction(item_name, item_price, item_stock, img_path) VALUES("Iphone5s", 100, 50, "./img/iphone1.jpg");
+INSERT INTO item_info_transaction(item_name, item_price, item_stock, img_path) VALUES("Iphone5s", 30000, 50, "./img/iphone1.jpg");
 INSERT INTO login_user_transaction(login_id, login_pass, user_name) VALUES("internous", "internous01", "test");
 INSERT INTO login_user_transaction(login_id, login_pass, user_name) VALUES("yuhei0623", "internous01", "yuhei0623");
