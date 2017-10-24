@@ -84,7 +84,7 @@ public class LoginAction extends ActionSupport implements SessionAware{
 			loginUserInfoMap.put("id", buyItemDTO.getId());
 			loginUserInfoMap.put("buyItem_name", buyItemDTO.getItemName());
 			loginUserInfoMap.put("buyItem_price", buyItemDTO.getItemPrice());
-			loginUserInfoMap.put("buyItem_img", buyItemDTO.getImg_path1());
+			loginUserInfoMap.put("buyItem_img", buyItemDTO.getImg_path());
 
 			return result;
 		}
