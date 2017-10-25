@@ -59,6 +59,7 @@ public class BuyItemAction extends ActionSupport implements SessionAware {
 
 			payment = "クレジットカード";
 			buyItemInfoMap.put("pay", payment);
+			result = "credit";
 		}
 		return result;
 	}
